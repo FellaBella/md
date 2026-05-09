@@ -4,6 +4,47 @@
 	<link rel="stylesheet" href="mp_style.css">
 	
 	<style>
+	
+	
+	.mysterybutton {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 20%;
+	margin-left: auto;
+	margin-right: auto;
+
+	padding: 1rem;
+
+	background-color: red;
+	color: white;
+	text-align: center;
+
+	text-decoration: none;
+	font-family: verdana;
+	font-size: 2rem;
+	font-weight: bold;
+
+	border-radius: 1rem;
+
+	transition: 0.3s ease;
+}
+
+.mysterybutton:hover {
+	transform: scale(1.1);
+
+	box-shadow:
+		0 0 15px rgba(181, 101, 29, 1),
+		0 0 30px rgba(181, 101, 29, 1);
+}
+	
+	
+	
+	
+	
+	
+	
 	h1.white  {color: white;
 	justify-content: center;
 	text-align: center;
@@ -30,7 +71,7 @@ h1.button  {color: white;
 
 
 
-h1.black  {color: white
+h1.black  {color: white;
 	justify-content: center;
 	text-align: center;
 	position: relative;
@@ -125,9 +166,9 @@ img {margin-left: auto;
 <h1>.</h1><h1>.</h1><h1>.</h1><h1>.</h1><h1>.</h1>
 <h1>.</h1><h1>.</h1><h1>.</h1><h1>.</h1><h1>.</h1>
 
-<form action="mp_upperhalf.html" method="GET">
-  <button type="submit"><h1 class="button">Mysterious Button</h1></button>
-</form>
+<a href="mp_upperhalf.html" class="mysterybutton">
+	Mysterious Button
+</a>
 
 <h1  class="white">Go on, press it. We can't scroll anymore.</h1>
 </tr>
@@ -137,3 +178,12 @@ img {margin-left: auto;
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
