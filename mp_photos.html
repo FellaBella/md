@@ -1,0 +1,364 @@
+<html>
+<head>
+	<title>Mysterious Page</title>
+	<link rel="stylesheet" href="mp_style.css">
+	
+<style>
+body {
+	background: linear-gradient(to bottom, #fff0f5, #ffd6e7);
+	font-family: "Trebuchet MS", sans-serif;
+	margin: 0;
+	padding: 0;
+	color: #5c2a3a;
+	overflow-x: hidden;
+	
+	h1.page {font-family: "Trebuchet MS", sans-serif; color: #5c2a3a;}
+	
+	
+}
+
+/* MAIN SECTION */
+.body1 {
+	width: 95%;
+	margin: auto;
+	text-align: center;
+	padding-top: 2rem;
+}
+
+/* TABLE FIX */
+.post {
+	width: 100%;
+	border-spacing: 1rem;
+	table-layout: fixed;
+}
+
+.post th {
+	font-size: clamp(1rem, 3vw, 2rem);
+	color: #c94f7c;
+	padding-bottom: 1rem;
+	text-shadow: 0 0 0.3rem rgba(255,255,255,0.8);
+}
+
+/* IMAGES */
+.post img {
+	width: 100%;
+	height: auto;
+	max-width: 100%;
+
+	border-radius: 1.2rem;
+	border: 0.25rem solid #ffc1d6;
+
+	box-shadow:
+		0 0 1rem rgba(255, 182, 193, 0.7),
+		0 0 2rem rgba(255, 192, 203, 0.4);
+
+	transition:
+		transform 0.4s ease,
+		box-shadow 0.4s ease,
+		filter 0.4s ease;
+}
+
+.post img:hover {
+	transform: scale(1.03);
+
+	box-shadow:
+		0 0 1.5rem rgba(255, 105, 180, 0.8),
+		0 0 3rem rgba(255, 182, 193, 0.6);
+
+	filter: brightness(1.05);
+}
+
+/* DIVIDER */
+.dvd {
+	text-align: center;
+	padding: 1rem;
+}
+
+.divide {
+	width: min(18rem, 90%);
+	animation: floaty 3s ease-in-out infinite;
+}
+
+@keyframes floaty {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-0.5rem);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+/* BUTTON SECTION */
+table:last-of-type {
+	margin: auto;
+	width: 100%;
+}
+
+table:last-of-type td {
+	text-align: center;
+}
+
+/* BUTTONS */
+button {
+	background: linear-gradient(to right, #ff8fb1, #ffb6c1);
+
+	color: white;
+	font-size: clamp(0.9rem, 2vw, 1.1rem);
+	font-weight: bold;
+
+	padding: 0.9rem 2rem;
+	margin: 1rem;
+
+	border: none;
+	border-radius: 2rem;
+
+	cursor: pointer;
+
+	box-shadow:
+		0 0 1rem rgba(255, 182, 193, 0.8);
+
+	transition:
+		transform 0.3s ease,
+		box-shadow 0.3s ease,
+		letter-spacing 0.3s ease;
+}
+
+button:hover {
+	transform: translateY(-0.2rem) scale(1.05);
+
+	letter-spacing: 0.05rem;
+
+	box-shadow:
+		0 0 1.5rem rgba(255, 105, 180, 0.8),
+		0 0 3rem rgba(255, 182, 193, 0.6);
+}
+
+button:active {
+	transform: scale(0.96);
+}
+
+/* FOOTER */
+.pbfooter {
+	background: #ffcade;
+	padding: 1rem;
+	text-align: center;
+	margin-top: 2rem;
+
+	box-shadow: 0 -0.2rem 1rem rgba(255, 182, 193, 0.5);
+}
+
+.foot {
+	margin: 0;
+	color: #8a3f5c;
+	font-size: clamp(0.8rem, 2vw, 1rem);
+	letter-spacing: 0.05rem;
+}
+
+/* MOBILE STACK */
+@media (max-width: 768px) {
+
+	.post,
+	.post tbody,
+	.post tr,
+	.post th,
+	.post td {
+		display: block;
+		width: 100%;
+	}
+
+	.post tr {
+		margin-bottom: 2rem;
+	}
+
+	.post th {
+		padding-top: 1rem;
+	}
+
+	table:last-of-type,
+	table:last-of-type tbody,
+	table:last-of-type tr,
+	table:last-of-type td {
+		display: block;
+		width: 100%;
+	}
+
+	button {
+		width: 90%;
+		max-width: 20rem;
+	}
+}
+
+.position {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 100%;
+	padding: 1rem 0;
+}
+
+/* NAVIGATION */
+.navigation {
+	width: 100%;
+}
+
+.navigation ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+
+	gap: 1rem;
+
+	padding: 0;
+	margin: 0;
+
+	list-style: none;
+}
+
+/* LINKS */
+.navigation a {
+	display: block;
+
+	text-decoration: none;
+	font-family: "Trebuchet MS", sans-serif;
+	font-size: clamp(0.9rem, 2vw, 1.1rem);
+	font-weight: bold;
+	letter-spacing: 0.03rem;
+
+	color: white;
+
+	background: linear-gradient(to right, #ff8fb1, #ffb6c1);
+
+	padding: 0.8rem 1.5rem;
+
+	border-radius: 2rem;
+
+	box-shadow:
+		0 0 1rem rgba(255, 182, 193, 0.6);
+
+	transition:
+		transform 0.3s ease,
+		box-shadow 0.3s ease,
+		letter-spacing 0.3s ease,
+		background 0.3s ease;
+}
+
+/* LINK */
+.navigation a:link {
+	color: white;
+}
+
+/* VISITED */
+.navigation a:visited {
+	color: #fff5fa;
+}
+
+/* HOVER */
+.navigation a:hover {
+	transform: translateY(-0.2rem) scale(1.05);
+
+	letter-spacing: 0.05rem;
+
+	background: linear-gradient(to right, #ff6f9f, #ff9fc0);
+
+	box-shadow:
+		0 0 1.5rem rgba(255, 105, 180, 0.8),
+		0 0 3rem rgba(255, 182, 193, 0.5);
+}
+
+/* ACTIVE */
+.navigation a:active {
+	transform: scale(0.96);
+
+	box-shadow: none;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+	.navigation ul {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.navigation li {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	.navigation a {
+		width: 85%;
+		text-align: center;
+	}
+}
+
+
+
+
+
+
+
+
+
+</style>
+	
+</head>
+<body>
+<div class="body1">
+<div class="position">
+<div class="navigation">
+<ul id="navigation">
+  <li><a href="mp_home.html" class="hover">Previous Page</a></li>
+  <li><a href="mp_photos.html" class="hover">Current Page</a></li>
+</ul>
+</div>
+</div>
+<div class="body1">
+<table class="post">
+<tr>
+<th></th>
+<th><h1 class="page">Happy Mother's Day!</h1></th>
+<th></th>
+</tr>
+<tr>
+<th>Flower Girl</th>
+<th>Goofin' Around</th>
+<th>Pucca</th>
+</tr>
+<tr>
+<td>
+<img src="mp1.jpg" height="400px" class="hover">
+</td>
+<td>
+<img src="mp2.jpg" height="400px" class="hover">
+</td>
+<td>
+<img src="mp3.jpg" height="400px" class="hover">
+</td>
+</tr>
+</table>
+
+ </div>
+<br>
+<div class="dvd">
+<br>
+  <img src="https://media.tenor.com/TDIic1NxqSEAAAAm/hello-kitty-sanrio.webp" class="divide">
+ 
+ </div>
+
+
+<br>
+</div>
+</div>
+<footer class="pbfooter">
+  <p class="foot">&copy; 2026 Jazmine Ysabella Odones.</p>
+</footer>
+
+
+</body>
+</html>
